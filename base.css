@@ -1,0 +1,17 @@
+* {
+    list-style: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+header nav a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
