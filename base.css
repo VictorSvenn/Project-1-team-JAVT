@@ -136,4 +136,40 @@ input::placeholder {
 }
 
 
-/* FOOTER FORM END /*
+/* FOOTER FORM END */
+
+#test {
+  display: flex;
+  justify-content: center;
+}
+section {
+  display: flex;
+  align-item: center;
+  text-align: center;
+  justify-content: space-around;
+  width: 40%;   
+  margin: 20px;
+}
+section a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+#commun {
+background: rgb(243, 243, 243) none repeat scroll 0% 0%;
+line-height: 22px;
+
+}
+hr{
+  width: 1000px;
+  margin: 2em auto;
+  opacity: 0.44;
+}
+#test2 {
+  display: flex;
+  color: rgb(74, 74, 74);
+  justify-content: space-between;
+  width: 100%; 
+}
+
+
+
