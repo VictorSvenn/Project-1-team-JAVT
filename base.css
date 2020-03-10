@@ -26,15 +26,21 @@ nav {
 
 /* FOOTER FORM */
 
-footer {
+footer form {
+    background-color: lightgrey;
+}
+
+footer p {
     margin: 1vw;
 }
 
 footer form h3 {
+    margin: 1vw;
     font-size: 3vw;
 }
 
 .form_footer {
+    margin: 1vw;
     display: flex;
     justify-content: space-between;
     margin-left: 6vw;
