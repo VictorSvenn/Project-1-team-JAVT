@@ -24,6 +24,7 @@ nav {
     background-color: darkslategray;
     height: 65px;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .nav_logo {
@@ -32,7 +33,7 @@ nav {
 
 header nav a {
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
 }
 
@@ -258,12 +259,12 @@ section a {
   color: rgb(74, 74, 74);
 }
 #commun {
-background: rgb(243, 243, 243) none repeat scroll 0% 0%;
+background: black none repeat scroll 0% 0%;
 line-height: 22px;
 
 }
 hr{
-  width: 1000px;
+  width: 100%;
   margin: 2em auto;
   opacity: 0.44;
 }
