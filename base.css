@@ -78,5 +78,10 @@ footer form h3 {
     top: 1px;
 }
 
+.footer_p_end {
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+
 
 /* FOOTER FORM END /*
