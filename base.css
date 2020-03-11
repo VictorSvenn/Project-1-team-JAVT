@@ -299,5 +299,6 @@ hr {
     .myButton {
         margin-right: 10vw;
     }
-    .footer_div {}
 }
+
+@media screen and (max-width: 767px) {}
