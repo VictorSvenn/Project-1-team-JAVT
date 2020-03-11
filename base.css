@@ -10,8 +10,7 @@ body {
     background-color: black;
     color: #FFFFFF;
     font-family: "Lomino", "LominoSubset", 'open-sans', sans-serif;
-    /*A: Copié-collé les polices pour choisir correctement la taille du texte.
-    La police leur appartient donc je ne sais pas si ça fonctionne correctement ou si Google a mis un truc similaire.*/
+    /*A: Supprimé margin et padding car déjà dans reset.css*/
 }
 
 h6 {
@@ -95,7 +94,7 @@ footer p {
 }
 
 footer form h3 {
-    margin: 1vw;
+    margin: 0 1vw 1vw 1vw;
     font-size: 3vw;
 }
 
@@ -125,7 +124,7 @@ input::placeholder {
     color: #ffffff;
     font-family: Arial;
     font-size: 2vw;
-    padding: 2vw;
+    padding: 1.5vw;
     text-decoration: none;
 }
 
@@ -138,7 +137,7 @@ input::placeholder {
     padding-top: 1vw;
     padding-bottom: 2vw;
 }
-
+/* FOOTER FORM END*/
 
 /* LIENS DU FOOTER START */
 
@@ -258,9 +257,23 @@ hr {
     }
 
     .myButton {
-        margin-right: 10vw;
+        margin-right: 0vw;
+    }
+    /*Victor adaptabilty*/
+    .form_footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
     }
 
+    .large_input {
+        width: 31%;
+        margin: 1vw;
+    }
+    /*Victor adaptabilty*/
+  
+  /*Footer Links Responsive md Start*/
     .col-md-0{ display: none; }
     .col-md-1{ width: 8.33%; box-sizing: border-box;}
     .col-md-2{ width: 16.66%; box-sizing: border-box; }
@@ -274,14 +287,48 @@ hr {
     .col-md-10{ width: 83.33%; box-sizing: border-box; }
     .col-md-11{ width: 91.66%; box-sizing: border-box; }
     .col-md-12{ width: 100%; box-sizing: border-box; }
-    
-}
 
-#social_medias svg {
+    #social_medias svg {
     width: 3vw;
+    }
+
+    /*Footer Links Responsive md End*/
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
+    /*Victor adaptabilty*/
+    .form_footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+    .large_input {
+        width: 90%;
+        margin: auto;
+        height: 5vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-size: 5vw;
+    }
+    .footer_Button {
+        width: 20%;
+        height: 5vh;
+        margin: auto;
+        font-size: 4vw;
+    }
+    footer form h3 {
+        font-size: 6vw;
+    }
+    /*Victor adaptabilty*/
+    .nav_links {
+        display: none;
+    }
+    .myButton {
+        margin-right: 0vw;
+    }
+  
+/*Footer Links Responsive sm Start*/
     .col-sm-0{ display: none; }
     .col-sm-1{ width: 8.33%; box-sizing: border-box;}
     .col-sm-2{ width: 16.66%; box-sizing: border-box; }
@@ -308,4 +355,5 @@ hr {
     .footer_div h6 {
         font-size: 13px;
     }
+ /*Footer Links Responsive sm End*/
 }
