@@ -300,8 +300,9 @@ hr {
         display: none;
     }
     .myButton {
-        margin-right: 10vw;
+        margin-right: 0vw;
     }
+    /*Victor adaptabilty*/
     .form_footer {
         display: flex;
         flex-wrap: wrap;
@@ -312,9 +313,11 @@ hr {
         width: 31%;
         margin: 1vw;
     }
+    /*Victor adaptabilty*/
 }
 
 @media screen and (max-width: 767px) {
+    /*Victor adaptabilty*/
     .form_footer {
         display: flex;
         flex-wrap: wrap;
@@ -337,5 +340,12 @@ hr {
     }
     footer form h3 {
         font-size: 6vw;
+    }
+    /*Victor adaptabilty*/
+    .nav_links {
+        display: none;
+    }
+    .myButton {
+        margin-right: 0vw;
     }
 }
