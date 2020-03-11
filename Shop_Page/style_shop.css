@@ -1,0 +1,60 @@
+body{
+    background-color: #f3f4f4;
+}
+ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: '✓';
+  }
+.dsk0{ display: none; }
+.dsk1{ width: 8.33%;  box-sizing: border-box; }
+.dsk2{ width: 16.66%;  box-sizing: border-box;  }
+.dsk3{ width: 25%;  box-sizing: border-box; }
+.dsk4{ width: 33.33%;  box-sizing: border-box; }
+.dsk5{ width: 41.66%;  box-sizing: border-box; }
+.dsk6{ width: 50%;  box-sizing: border-box; }
+.dsk7{ width: 58.33%;  box-sizing: border-box; }
+.dsk8{ width: 66.66%;  box-sizing: border-box; }
+.dsk9{ width: 75%;  box-sizing: border-box; }
+.dsk10{ width: 83.33%;  box-sizing: border-box; }
+.dsk11{ width: 91.66%;  box-sizing: border-box; }
+.dsk12{ width: 100%;  box-sizing: border-box; }
+
+.title_block{
+    text-align: center;
+    margin: 3vw;
+}
+.shop_boxes{
+    display: flex;
+    justify-content: space-around;
+    padding: 3vw 0;
+}
+.shop_box{
+    padding: 2vw;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    background-color: white;
+    text-align: center;
+}
+.shop_box img{
+    position: relative;
+    width: 100%;
+}
+.box_features ul{
+    padding: 0;
+}
+.box_price{
+    position: relative;
+    display: flex;
+    align-content: space-between;
+}
+.box_price button{
+    position: absolute;
+    right: 0;
+    margin: auto;
+    padding: auto;
+}
