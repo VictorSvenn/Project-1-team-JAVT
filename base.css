@@ -73,7 +73,10 @@ header nav a {
 .nav_help {
     height: 65px;
 }
+
+
 /*HEADER END*/
+
 
 /* FOOTER FORM START*/
 
@@ -109,21 +112,15 @@ input::placeholder {
 }
 
 .footer_Button {
-    background: linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
-    background-color: #e4685d;
+    background-color: red;
     border-radius: 42px;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Arial;
-    font-size: 17px;
-    padding: 16px 39px;
+    font-size: 2vw;
+    padding: 2vw;
     text-decoration: none;
-}
-
-.footer_Button:hover {
-    background: linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
-    background-color: #eb675e;
 }
 
 .footer_Button:active {
@@ -137,71 +134,74 @@ input::placeholder {
 }
 
 
-
 /* FOOTER BAS START */
 
 #test {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
-section {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
-  width: 40%;   
-  margin: 20px;
-}
-section a {
-  text-decoration: none;
-  color: rgb(74, 74, 74);
-}
-#commun {
-background: black    none repeat scroll 0% 0%;
-line-height: 22px;
 
+section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 40%;
+    margin: 20px;
 }
+
+section a {
+    text-decoration: none;
+    color: rgb(74, 74, 74);
+}
+
+#commun {
+    background: black none repeat scroll 0% 0%;
+    line-height: 22px;
+}
+
 #test2 {
-  display: flex;
-  color: rgb(74, 74, 74);
-  justify-content: space-between;
-  width: 100%; 
+    display: flex;
+    color: rgb(74, 74, 74);
+    justify-content: space-between;
+    width: 100%;
 }
+
 
 /* FOOTER BAS END */
 
 
 /* LIENS DU FOOTER START */
+
 #footer_links {
     box-sizing: border-box;
-    background-color: rgba(0,0,0,0);
-    display : flex;
-    margin : auto;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    margin: auto;
     flex-flow: row wrap;
     width: calc(100% - 48px);
     max-width: 1272px;
 }
 
 .footer_div {
-    display : flex;
-    flex:1 0 100%;
+    display: flex;
+    flex: 1 0 100%;
     flex-basis: 408px;
-    flex-direction : column;
+    flex-direction: column;
     align-items: flex-start;
     margin-bottom: 1rem;
 }
 
 .footer_div ul {
-   padding: 0;
-   margin: 0;
-   display : flex;
-   flex-direction : column;
-   align-items: flex-start;
-  
-} 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 .footer_div li {
-   padding: 0.5rem;
+    padding: 0.5rem;
 }
 
 .footer_div a {
@@ -210,19 +210,19 @@ line-height: 22px;
 }
 
 h6 {
-  /*font-family: var(--fontBase);*/
-  color: rgb(74, 74, 74);
-  font-weight: 300;
-  line-height: 1.45556;
-  margin-bottom: 0.5rem;
-  margin-left: 0.5rem; 
+    /*font-family: var(--fontBase);*/
+    color: rgb(74, 74, 74);
+    font-weight: 300;
+    line-height: 1.45556;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 #social-medias {
-    display : flex;
-    flex:1 0 100%;
+    display: flex;
+    flex: 1 0 100%;
     flex-basis: 400px;
-    flex-direction : row;
+    flex-direction: row;
     align-items: flex-start;
     margin-left: 0.5rem;
 }
@@ -230,44 +230,61 @@ h6 {
 #social-medias svg {
     margin-right: 1rem;
     width: 2rem;
-    color:rgb(113, 113, 113);
-  }
+    color: rgb(113, 113, 113);
+}
+
+
 /*LIENS DU FOOTER END*/
 
 
 /* FOOTER BAS START */
 
 #test {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
-section {
-  display: flex;
-  align-item: center;
-  text-align: center;
-  justify-content: space-around;
-  width: 40%;   
-  margin: 20px;
-}
-section a {
-  text-decoration: none;
-  color: rgb(74, 74, 74);
-}
-#commun {
-background: black none repeat scroll 0% 0%;
-line-height: 22px;
 
+section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 40%;
+    margin: 20px;
 }
-hr{
-  width: 100%;
-  margin: 2em auto;
-  opacity: 0.44;
+
+section a {
+    text-decoration: none;
+    color: rgb(74, 74, 74);
 }
+
+#commun {
+    background: black none repeat scroll 0% 0%;
+    line-height: 22px;
+}
+
+hr {
+    width: 100%;
+    margin: 2em auto;
+    opacity: 0.44;
+}
+
 #test2 {
-  display: flex;
-  color: rgb(74, 74, 74);
-  justify-content: space-between;
-  width: 100%; 
+    display: flex;
+    color: rgb(74, 74, 74);
+    justify-content: space-between;
+    width: 100%;
 }
+
 
 /* FOOTER BAS END */
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .nav_links {
+        display: none;
+    }
+    .myButton {
+        margin-right: 10vw;
+    }
+    .footer_div {}
+}
