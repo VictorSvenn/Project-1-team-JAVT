@@ -11,7 +11,7 @@ body {
     margin: 0;
     background-color: black;
     color: #FFFFFF;
-    font-family: "Lomino", "LominoSubset", 'open-sans', sans-serif; 
+    font-family: "Lomino", "LominoSubset", 'open-sans', sans-serif;
     /*A: Copié-collé les polices pour choisir correctement la taille du texte.
     La police leur appartient donc je ne sais pas si ça fonctionne correctement ou si Google a mis un truc similaire.*/
 }
@@ -22,7 +22,11 @@ h6 {
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
     font-size: 14px;
-} /*A : Ajout h6 général car réutilisé sur ma page*/
+}
+
+
+/*A : Ajout h6 général car réutilisé sur ma page*/
+
 
 /* HEADER START */
 
@@ -83,7 +87,10 @@ header nav a {
 .nav_help {
     height: 65px;
 }
+
+
 /*HEADER END*/
+
 
 /* FOOTER FORM START*/
 
@@ -119,21 +126,15 @@ input::placeholder {
 }
 
 .footer_Button {
-    background: linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
-    background-color: #e4685d;
+    background-color: red;
     border-radius: 42px;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Arial;
-    font-size: 17px;
-    padding: 16px 39px;
+    font-size: 2vw;
+    padding: 2vw;
     text-decoration: none;
-}
-
-.footer_Button:hover {
-    background: linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
-    background-color: #eb675e;
 }
 
 .footer_Button:active {
@@ -147,71 +148,75 @@ input::placeholder {
 }
 
 
-
 /* FOOTER BAS START */
 
 #test {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
-section {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
-  width: 40%;   
-  margin: 20px;
-}
-section a {
-  text-decoration: none;
-  color: rgb(74, 74, 74);
-}
-#commun {
-background: black    none repeat scroll 0% 0%;
-line-height: 22px;
 
+section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 40%;
+    margin: 20px;
 }
+
+section a {
+    text-decoration: none;
+    color: rgb(74, 74, 74);
+}
+
+#commun {
+    background: black none repeat scroll 0% 0%;
+    line-height: 22px;
+}
+
 #test2 {
-  display: flex;
-  color: rgb(74, 74, 74);
-  justify-content: space-between;
-  width: 100%; 
+    display: flex;
+    color: rgb(74, 74, 74);
+    justify-content: space-between;
+    width: 100%;
 }
+
 
 /* FOOTER BAS END */
 
 
 /* LIENS DU FOOTER START */
+
 #footer_links {
     box-sizing: border-box;
-    background-color: rgba(0,0,0,0);
-    display : flex;
-    margin : 2.5rem auto;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    margin: 2.5rem auto;
     flex-flow: row wrap;
     width: calc(100% - 48px);
     max-width: 1272px;
 }
 
 .footer_div {
-    display : flex;
-    flex:1 0 100%;
+    display: flex;
+    flex: 1 0 100%;
     flex-basis: 408px;
-    flex-direction : column;
+    flex-direction: column;
     align-items: flex-start;
     margin-bottom: 2.3rem;
 }
 
 .footer_div ul {
-   padding: 0;
-   margin: 0;
-   display : flex;
-   flex-direction : column;
-   align-items: flex-start;
-   font-size: 12px;  
-} 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+}
 
 .footer_div li {
-   padding: 0.5rem;
+    padding: 0.5rem;
 }
 
 .footer_div a {
@@ -220,16 +225,16 @@ line-height: 22px;
 }
 
 .footer_div h6 {
-  /*font-family: var(--fontBase);*/
-  color: white;
-  margin-bottom: 1.2rem;
+    /*font-family: var(--fontBase);*/
+    color: white;
+    margin-bottom: 1.2rem;
 }
 
 #social_medias {
-    display : flex;
-    flex:1 0 100%;
+    display: flex;
+    flex: 1 0 100%;
     flex-basis: 400px;
-    flex-direction : row;
+    flex-direction: row;
     align-items: flex-start;
     margin-left: 0.5rem;
 }
@@ -238,43 +243,62 @@ line-height: 22px;
     margin-right: 1rem;
     width: 2rem;
     color: white;
-  }
+}
+
+
 /*LIENS DU FOOTER END*/
 
 
 /* FOOTER BAS START */
 
 #test {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
-section {
-  display: flex;
-  align-items: center; /*A: Jordan, si tu vois un conflit c'est parce que j'ai mis un s manquant à align*/
-  text-align: center;
-  justify-content: space-around;
-  width: 40%;   
-  margin: 20px;
-}
-section a {
-  text-decoration: none;
-  color: rgb(74, 74, 74);
-}
-#commun {
-background: black none repeat scroll 0% 0%;
-line-height: 22px;
 
+section {
+    display: flex;
+    align-items: center;
+    /*A: Jordan, si tu vois un conflit c'est parce que j'ai mis un s manquant à align*/
+    text-align: center;
+    justify-content: space-around;
+    width: 40%;
+    margin: 20px;
 }
-hr{
-  width: 100%;
-  margin: 2em auto;
-  opacity: 0.44;
+
+section a {
+    text-decoration: none;
+    color: rgb(74, 74, 74);
 }
+
+#commun {
+    background: black none repeat scroll 0% 0%;
+    line-height: 22px;
+}
+
+hr {
+    width: 100%;
+    margin: 2em auto;
+    opacity: 0.44;
+}
+
 #test2 {
-  display: flex;
-  color: rgb(74, 74, 74);
-  justify-content: space-between;
-  width: 100%; 
+    display: flex;
+    color: rgb(74, 74, 74);
+    justify-content: space-between;
+    width: 100%;
 }
+
 
 /* FOOTER BAS END */
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .nav_links {
+        display: none;
+    }
+    .myButton {
+        margin-right: 10vw;
+    }
+}
+
+@media screen and (max-width: 767px) {}
