@@ -11,7 +11,21 @@ body {
     margin: 0;
     background-color: black;
     color: #FFFFFF;
+    font-family: "Lomino", "LominoSubset", 'open-sans', sans-serif;
+    /*A: Copié-collé les polices pour choisir correctement la taille du texte.
+    La police leur appartient donc je ne sais pas si ça fonctionne correctement ou si Google a mis un truc similaire.*/
 }
+
+h6 {
+    font-weight: bold;
+    line-height: 1.45556;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 14px;
+}
+
+
+/*A : Ajout h6 général car réutilisé sur ma page*/
 
 
 /* HEADER START */
@@ -177,7 +191,7 @@ section a {
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0);
     display: flex;
-    margin: auto;
+    margin: 2.5rem auto;
     flex-flow: row wrap;
     width: calc(100% - 48px);
     max-width: 1272px;
@@ -189,7 +203,7 @@ section a {
     flex-basis: 408px;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 2.3rem;
 }
 
 .footer_div ul {
@@ -198,6 +212,7 @@ section a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 12px;
 }
 
 .footer_div li {
@@ -206,19 +221,16 @@ section a {
 
 .footer_div a {
     text-decoration: none;
-    color: rgb(74, 74, 74);
+    color: white;
 }
 
-h6 {
+.footer_div h6 {
     /*font-family: var(--fontBase);*/
-    color: rgb(74, 74, 74);
-    font-weight: 300;
-    line-height: 1.45556;
-    margin-bottom: 0.5rem;
-    margin-left: 0.5rem;
+    color: white;
+    margin-bottom: 1.2rem;
 }
 
-#social-medias {
+#social_medias {
     display: flex;
     flex: 1 0 100%;
     flex-basis: 400px;
@@ -227,10 +239,10 @@ h6 {
     margin-left: 0.5rem;
 }
 
-#social-medias svg {
+#social_medias svg {
     margin-right: 1rem;
     width: 2rem;
-    color: rgb(113, 113, 113);
+    color: white;
 }
 
 
@@ -247,6 +259,7 @@ h6 {
 section {
     display: flex;
     align-items: center;
+    /*A: Jordan, si tu vois un conflit c'est parce que j'ai mis un s manquant à align*/
     text-align: center;
     justify-content: space-around;
     width: 40%;
