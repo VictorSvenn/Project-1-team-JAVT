@@ -393,9 +393,6 @@ hr {
     .last-row {
         display: flex;
         align-items: center;
-        border-style: solid;
-        border-color: yellowgreen;
-        border-width: 2px;
         box-sizing: content-box;
         height: 10vh;
         margin-top: 2vh;
