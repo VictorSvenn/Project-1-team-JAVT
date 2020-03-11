@@ -103,7 +103,7 @@ footer p {
 }
 
 footer form h3 {
-    margin: 1vw;
+    margin: 0 1vw 1vw 1vw;
     font-size: 3vw;
 }
 
@@ -133,7 +133,7 @@ input::placeholder {
     color: #ffffff;
     font-family: Arial;
     font-size: 2vw;
-    padding: 2vw;
+    padding: 1.5vw;
     text-decoration: none;
 }
 
@@ -146,6 +146,9 @@ input::placeholder {
     padding-top: 1vw;
     padding-bottom: 2vw;
 }
+
+
+/* FOOTER FORM END*/
 
 
 /* FOOTER BAS START */
@@ -299,6 +302,40 @@ hr {
     .myButton {
         margin-right: 10vw;
     }
+    .form_footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .large_input {
+        width: 31%;
+        margin: 1vw;
+    }
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .form_footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+    .large_input {
+        width: 90%;
+        margin: auto;
+        height: 5vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-size: 5vw;
+    }
+    .footer_Button {
+        width: 20%;
+        height: 5vh;
+        margin: auto;
+        font-size: 4vw;
+    }
+    footer form h3 {
+        font-size: 6vw;
+    }
+}
