@@ -7,14 +7,19 @@ html {
 }
 
 body {
-    padding: 0;
-    margin: 0;
     background-color: black;
     color: #FFFFFF;
+    font-family: "Lomino", "LominoSubset", 'open-sans', sans-serif;
+    /*A: Supprimé margin et padding car déjà dans reset.css*/
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 14px;
 }
 
 
-/* HEADER */
+/* HEADER START */
 
 nav {
     display: flex;
@@ -24,6 +29,7 @@ nav {
     background-color: darkslategray;
     height: 65px;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .nav_logo {
@@ -32,7 +38,7 @@ nav {
 
 header nav a {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
 }
 
@@ -74,7 +80,10 @@ header nav a {
 }
 
 
-/* FOOTER FORM */
+/*HEADER END*/
+
+
+/* FOOTER FORM START*/
 
 footer form {
     background-color: grey;
@@ -85,7 +94,7 @@ footer p {
 }
 
 footer form h3 {
-    margin: 1vw;
+    margin: 0 1vw 1vw 1vw;
     font-size: 3vw;
 }
 
@@ -108,21 +117,15 @@ input::placeholder {
 }
 
 .footer_Button {
-    background: linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
-    background-color: #e4685d;
+    background-color: red;
     border-radius: 42px;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Arial;
-    font-size: 17px;
-    padding: 16px 39px;
+    font-size: 2vw;
+    padding: 1.5vw;
     text-decoration: none;
-}
-
-.footer_Button:hover {
-    background: linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
-    background-color: #eb675e;
 }
 
 .footer_Button:active {
@@ -134,84 +137,269 @@ input::placeholder {
     padding-top: 1vw;
     padding-bottom: 2vw;
 }
+/* FOOTER FORM END*/
+
+/* LIENS DU FOOTER START */
+
+.container_footer_links {
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.centered{ justify-content: center; }
+.around{ justify-content: space-around; }
+.between{ justify-content: space-between; }
+
+.col-lg-0{ display: none; }
+.col-lg-1{ width: 8.33%; box-sizing: border-box;}
+.col-lg-2{ width: 16.66%; box-sizing: border-box; }
+.col-lg-3{ width: 25%; box-sizing: border-box;}
+.col-lg-4{ width: 33.33%; box-sizing: border-box;}
+.col-lg-5{ width: 41.66%; box-sizing: border-box;}
+.col-lg-6{ width: 50%; box-sizing: border-box; }
+.col-lg-7{ width: 58.33%; box-sizing: border-box;}
+.col-lg-8{ width: 66.66%; box-sizing: border-box; }
+.col-lg-9{ width: 75%; box-sizing: border-box;}
+.col-lg-10{ width: 83.33%; box-sizing: border-box; }
+.col-lg-11{ width: 91.66%; box-sizing: border-box; }
+.col-lg-12{ width: 100%; box-sizing: border-box; }
+
+.footer_link {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2vh auto;
+}
+
+.footer-line-wrapper {
+    display: flex;
+}
+
+.footer_div {
+    display: flex;   
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2vh;
+    font-size: 12px;
+}
+
+.footer_div h6 {
+    color: rgb(74, 74, 74);
+    margin-bottom: 1vh;
+}
+
+.footer_div a {
+    text-decoration: none;
+    color: rgb(74, 74, 74);
+    padding: 1vh;
+}
+
+#social_medias {
+    display: flex;
+    align-items: flex-start;
+}
+
+#social_medias svg {
+    margin-right: 0.2vw;
+    width: 3vw;
+    color: rgb(74, 74, 74);
+}
+
+.hide-button{
+    display: none;
+}
+
+/*LIENS DU FOOTER END*/
 
 
-/* FOOTER FORM END */
+/* FOOTER BAS START */
 
 #test {
     display: flex;
     justify-content: center;
-     
-  }
-  
-  section {
+}
+
+section {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    width: 70%;   
+    width: 40%;
     margin: 20px;
-  }
-  section a {
+}
+
+section a {
     text-decoration: none;
     color: rgb(74, 74, 74);
-    
-  }
-  #commun {
-  background: black;
-  line-height: 22px;
-  
-  }
-  hr{
-    width: 1000px;
+}
+
+#commun {
+    background: black none repeat scroll 0% 0%;
+    line-height: 22px;
+}
+
+hr {
+    width: 100%;
     margin: 2em auto;
     opacity: 0.44;
-  }
-  #test2 {
+}
+
+#test2 {
     display: flex;
     color: rgb(74, 74, 74);
     justify-content: space-between;
-    width: 100%; 
-  }
-  
-  
-  @media screen and (min-width:768px) and (max-width: 991px) {
-    #div2 {
-      display: block;
-      margin: 0px;
-    padding: 0px;
-    border: 0px none;
-    font: inherit;
-    text-align: ;
-    letter-spacing: 0px;
-      
-    }
-    #test section a {
-      display: block;
-      
-    }
-    hr{
-      width: 70%; 
-      opacity: 0,1;
-    }
-    
-    
-  }
-  
-  @media screen and (max-width:767px) {   
-  
-    #test section {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    }
-    #test2 {
-      justify-content: center;
-    }
-   
-  }
-  
+    width: 100%;
+}
 
 
+/* FOOTER BAS END */
 
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .nav_links {
+        display: none;
+    }
+
+    .myButton {
+        margin-right: 0vw;
+    }
+    /*Victor adaptabilty*/
+    .form_footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .large_input {
+        width: 31%;
+        margin: 1vw;
+    }
+    /*Victor adaptabilty*/
+  
+  /*Footer Links Responsive md Start*/
+    .col-md-0{ display: none; }
+    .col-md-1{ width: 8.33%; box-sizing: border-box;}
+    .col-md-2{ width: 16.66%; box-sizing: border-box; }
+    .col-md-3{ width: 25%; box-sizing: border-box;}
+    .col-md-4{ width: 33.33%; box-sizing: border-box;}
+    .col-md-5{ width: 41.66%; box-sizing: border-box;}
+    .col-md-6{ width: 50%; box-sizing: border-box; }
+    .col-md-7{ width: 58.33%; box-sizing: border-box;}
+    .col-md-8{ width: 66.66%; box-sizing: border-box; }
+    .col-md-9{ width: 75%; box-sizing: border-box;}
+    .col-md-10{ width: 83.33%; box-sizing: border-box; }
+    .col-md-11{ width: 91.66%; box-sizing: border-box; }
+    .col-md-12{ width: 100%; box-sizing: border-box; }
+
+    #social_medias svg {
+    width: 3vw;
+    }
+
+    .hide-button{
+        display: hide;
+    }
+
+    .footer-line-wrapper {
+        display: flex;
+    }
+
+    /*Footer Links Responsive md End*/
+}
+
+@media screen and (max-width: 767px) {
+    /*Victor adaptabilty*/
+    .form_footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+    .large_input {
+        width: 90%;
+        margin: auto;
+        height: 5vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-size: 5vw;
+    }
+    .footer_Button {
+        width: 20%;
+        height: 5vh;
+        margin: auto;
+        font-size: 4vw;
+    }
+    footer form h3 {
+        font-size: 6vw;
+    }
+    /*Victor adaptabilty*/
+    .nav_links {
+        display: none;
+    }
+    .myButton {
+        margin-right: 0vw;
+    }
+  
+/*Footer Links Responsive sm Start*/
+    .col-sm-0{ display: none; }
+    .col-sm-1{ width: 8.33%; box-sizing: border-box;}
+    .col-sm-2{ width: 16.66%; box-sizing: border-box; }
+    .col-sm-3{ width: 25%; box-sizing: border-box;}
+    .col-sm-4{ width: 33.33%; box-sizing: border-box;}
+    .col-sm-5{ width: 41.66%; box-sizing: border-box;}
+    .col-sm-6{ width: 50%; box-sizing: border-box; }
+    .col-sm-7{ width: 58.33%; box-sizing: border-box;}
+    .col-sm-8{ width: 66.66%; box-sizing: border-box; }
+    .col-sm-9{ width: 75%; box-sizing: border-box;}
+    .col-sm-10{ width: 83.33%; box-sizing: border-box; }
+    .col-sm-11{ width: 91.66%; box-sizing: border-box; }
+    .col-sm-12{ width: 100%; box-sizing: border-box; }
+
+    .footer_div h6 {
+        font-size: 13px;
+    }
+
+    .footer_link {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-line-wrapper {
+        display: flex;
+        margin-bottom: 2vh;
+    }
+
+
+    .footer-line-wrapper:not(.hide-red-border) {
+        border-bottom: thin solid rgb(74, 74, 74);
+    }
+
+    .content-to-show {
+        display: none;
+    }
+
+    .hide-button{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hide-button svg {
+        color: rgb(74, 74, 74);
+        transform: rotate(180deg);
+    }
+
+    .last-row {
+        display: flex;
+        align-items: center;
+        box-sizing: content-box;
+        height: 10vh;
+        margin-top: 2vh;
+    }
+
+    #social_medias svg {
+        width: 25px;
+        padding-right: 2px;
+    }
+ /*Footer Links Responsive sm End*/
+}

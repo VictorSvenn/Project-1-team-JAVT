@@ -2,7 +2,7 @@
 <h1>Project-1-team-JAVT</h1>
 
 <h2>En quoi consiste ce projet ?</h2>
-Ce proket consiste à créer une copie de ce site : https://www.magicleap.com/
+Ce projet consiste à créer une copie de ce site : https://www.magicleap.com/
 Les consignes complètes sont disponibles sur le Drive commun : https://drive.google.com/open?id=1EJtvREHW0ckmgdBrfHfsh-mRlvmj9PG3aW2LK2xxugA
 
 <h2>Notre équipe :</h2>
