@@ -1,10 +1,39 @@
+
 body{
-    background-color: #f3f4f4;
+    background-color: #F3F4F4;
+    width: 95vw;
+    margin: auto;
+    color: #2A2A2A;
+    font-family: "Lomino", "LominoSubset", 'open-sans', sans-serif;
+}
+h1{
+    font-size: 230%;
+    font-weight: 700;
+    margin: 15vh 3vh 3vh 3vh;
+    overflow: visible;
+}
+.FAQ_title h2{
+    font-size: 200%;
+    margin: 5vw;
+}
+h3{
+    font-size: 150%;
+    font-weight: 700;
+    padding: 1vw;
+}
+h4{
+    padding: 1vw;
+    font-size: 150%;
+}
+p{
+    font-size: 150%;
 }
 ul {
     list-style: none;
   }
-  
+button{
+    background-color: #F12742;
+}
   ul li:before {
     content: '✓';
   }
@@ -22,6 +51,8 @@ ul {
 .dsk11{ width: 91.66%;  box-sizing: border-box; }
 .dsk12{ width: 100%;  box-sizing: border-box; }
 
+
+
 .title_block{
     text-align: center;
     margin: 3vw;
@@ -33,28 +64,105 @@ ul {
 }
 .shop_box{
     padding: 2vw;
-    margin: 0 5px;
+    margin: 0 1vw;
     display: flex;
     flex-direction: column;
     align-items: space-between;
-    background-color: white;
+    background-color: #FDFDFD;
     text-align: center;
+}
+.shop_box p{
+    margin: 1vw;
+}
+.shop_box p, .shop_box h3, .shop_box a{
+    text-align: left;
 }
 .shop_box img{
     position: relative;
     width: 100%;
 }
+.shop_box a{
+    color: #5D5E60;
+    margin: 0.5vw 1vw;
+}
 .box_features ul{
     padding: 0;
 }
+.box_features ul li{
+    margin: 1vw;
+    font-size: 130%;
+}
 .box_price{
-    position: relative;
     display: flex;
-    align-content: space-between;
+    align-content: space-around;
 }
 .box_price button{
-    position: absolute;
-    right: 0;
+    width: 33%;
     margin: auto;
-    padding: auto;
+    border-radius: 10px;
+    height: 4vh;
+}
+.info_boxes{
+    display: flex;
+    text-align: center;
+}
+.FAQ_title{
+    text-align: center;
+    font-weight: 700;
+}
+.FAQ_items{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vw 1vw 7vw 1vw;
+}
+.FAQ{
+    display: flex;
+    flex-direction: column;
+}
+.FAQ_item{
+    padding: 2vw;
+}
+.FAQ_item h4{
+    font-size: 150%;
+    padding: 1vw 0;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .box_price{
+        display: flex;
+        flex-direction: column;
+    }
+    .box_price p{
+        text-align: center;
+    }
+    .box_price button{
+        width: 80%;
+        margin: auto;
+    }
+    .tbl0{ display: none; }
+    .tbl1{ width: 8.33%;  box-sizing: border-box; }
+    .tbl2{ width: 16.66%;  box-sizing: border-box;  }
+    .tbl3{ width: 25%;  box-sizing: border-box; }
+    .tbl4{ width: 33.33%;  box-sizing: border-box; }
+    .tbl5{ width: 41.66%;  box-sizing: border-box; }
+    .tbl6{ width: 50%;  box-sizing: border-box; }
+    .tbl7{ width: 58.33%;  box-sizing: border-box; }
+    .tbl8{ width: 66.66%;  box-sizing: border-box; }
+    .tbl9{ width: 75%;  box-sizing: border-box; }
+    .tbl10{ width: 83.33%;  box-sizing: border-box; }
+    .tbl11{ width: 91.66%;  box-sizing: border-box; }
+    .tbl12{ width: 100%;  box-sizing: border-box; }
+
+
+    .info_boxes{
+        flex-wrap: wrap;
+    }
+    .FAQ_title h2{
+        margin: 10vw 0 10vw 3vw;
+        text-align: left;
+    }
+    .FAQ_items{
+        flex-wrap: wrap;
+    }
 }
