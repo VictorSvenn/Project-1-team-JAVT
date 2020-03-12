@@ -33,6 +33,7 @@ ul {
   }
 button{
     background-color: #F12742;
+    color: white;
 }
   ul li:before {
     content: '✓';
@@ -70,6 +71,7 @@ button{
     align-items: space-between;
     background-color: #FDFDFD;
     text-align: center;
+    box-shadow: 3px 10px 9px 0px black;
 }
 .shop_box p{
     margin: 1vw;
@@ -158,9 +160,42 @@ button{
     .info_boxes{
         flex-wrap: wrap;
     }
+    .svg{
+        width: 100%;
+        height: 100%;
+    }
     .FAQ_title h2{
         margin: 10vw 0 10vw 3vw;
         text-align: left;
+    }
+    .FAQ_items{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .phn0{ display: none; }
+    .phn1{ width: 8.33%;  box-sizing: border-box; }
+    .phn2{ width: 16.66%;  box-sizing: border-box;  }
+    .phn3{ width: 25%;  box-sizing: border-box; }
+    .phn4{ width: 33.33%;  box-sizing: border-box; }
+    .phn5{ width: 41.66%;  box-sizing: border-box; }
+    .phn6{ width: 50%;  box-sizing: border-box; }
+    .phn7{ width: 58.33%;  box-sizing: border-box; }
+    .phn8{ width: 66.66%;  box-sizing: border-box; }
+    .phn9{ width: 75%;  box-sizing: border-box; }
+    .phn10{ width: 83.33%;  box-sizing: border-box; }
+    .phn11{ width: 91.66%;  box-sizing: border-box; }
+    .phn12{ width: 100%;  box-sizing: border-box; }
+    .shop_boxes{
+        flex-wrap: wrap;
+    }
+    .shop_box{
+
+        margin: 2vw 0;
+    }
+    .info_boxes{
+        flex-wrap: wrap;
     }
     .FAQ_items{
         flex-wrap: wrap;
