@@ -17,6 +17,10 @@ header nav a {
     font-size: 1rem;
     color: rgb(255, 255, 255);
 }
+nav a:active{
+    background-color: black;
+    color: white;
+}
 .myButton {
     background-color: #ffffff;
     border: #ffffff solid 1px;
