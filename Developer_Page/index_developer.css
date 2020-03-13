@@ -1,0 +1,58 @@
+#Titre {
+    color: rgb(74, 74, 74);
+    text-align: center;
+    font-family: var(--fontBase);
+    font-weight: 700;
+    font-size: 48px;
+}
+
+#littletitles {
+    text-align: center;
+    color: rgb(113, 113, 113);
+    font-size: 18px;
+    line-height: 26px;
+    margin: 20px;
+}
+
+.Imaes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px;
+    padding: 100px;
+    justify-content: space-between;
+    letter-spacing: 0px;
+    overflow-wrap: break-word;
+    font-size: 12px;
+}
+
+.Imaes img {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin: auto;
+}
+
+#h10 {
+    margin: 100px;
+    font-weight: 100px;
+}
+
+.Hardware {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 100px;
+    padding: 100px;
+    background-color: #f1f1f1;
+    font-size: small;
+    margin: 100px;
+    align-items: center;
+    text-indent: 250px;
+}
+}
