@@ -9,18 +9,22 @@ nav {
     align-items: center;
     flex-wrap: nowrap;
 }
+
 .nav_logo {
     margin: 0 0 0 30px;
 }
+
 header nav a {
     text-decoration: none;
     font-size: 1rem;
     color: rgb(255, 255, 255);
 }
-nav a:active{
+
+nav a:active {
     background-color: black;
     color: white;
 }
+
 .myButton {
     background-color: #ffffff;
     border: #ffffff solid 1px;
@@ -33,22 +37,27 @@ nav a:active{
     text-decoration: none;
     text-shadow: 0px 1px 0px #2f6627;
 }
+
 .myButton:hover {
     color: rgb(42, 42, 42);
     background-color: rgb(255, 255, 255);
     border: black solid 1px;
 }
+
 .myButton:active {
     position: relative;
     top: 1px;
 }
+
 .nav_links {
     margin: 2px;
     padding: 0 5px;
 }
+
 .nav_links a {
     margin: 0 15px;
 }
+
 .nav_help {
     height: 65px;
 }
@@ -57,18 +66,22 @@ nav a:active{
 footer form {
     background-color: #F3F4F4;
 }
+
 footer p {
     margin: 1vw;
 }
+
 footer form h3 {
     margin: 0 1vw 1vw 1vw;
     font-size: 3vw;
 }
+
 .form_footer {
     margin: 1vw;
     display: flex;
     justify-content: space-between;
 }
+
 .large_input {
     width: 22vw;
     height: 3vw;
@@ -76,6 +89,7 @@ footer form h3 {
     border-bottom: 2px solid black;
     background-color: #F3F4F4;
 }
+
 .footer_Button {
     background-color: red;
     border-radius: 42px;
@@ -87,14 +101,17 @@ footer form h3 {
     padding: 1.5vw;
     text-decoration: none;
 }
+
 .footer_Button:active {
     position: relative;
     top: 1px;
 }
+
 .footer_form_p {
     padding-top: 1vw;
     padding-bottom: 2vw;
 }
+
 /*Footer form (victor)*/
 
 /*Liens footer(Ashe)*/
@@ -106,9 +123,11 @@ footer form h3 {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .centered {
     justify-content: center;
 }
+
 .around {
     justify-content: space-around;
 }
@@ -116,6 +135,7 @@ footer form h3 {
 .between {
     justify-content: space-between;
 }
+
 .footer_link {
     display: flex;
     flex-wrap: wrap;
@@ -159,23 +179,27 @@ footer form h3 {
 .hide-button {
     display: none;
 }
+
 /*Liens footer(Ashe)*/
 /*Bas du footer(Jordan)*/
-.t_links{
+.t_links {
     display: flex;
     margin: auto;
     justify-content: space-evenly;
 }
-.t_links1 a{
+
+.t_links1 a {
     text-decoration: none;
     color: black;
     margin-left: 2vw;
 }
-.t_links2 a{
+
+.t_links2 a {
     text-decoration: none;
     color: black;
     margin-left: 2vw;
 }
+
 .commun {
     background-color: #F3F4F4;
     line-height: 22px;
@@ -183,19 +207,24 @@ footer form h3 {
     flex-direction: column;
     align-items: center;
 }
+
 .copyright {
     display: flex;
     color: rgb(74, 74, 74);
     justify-content: space-between;
     width: 100%;
 }
-.copyright p{
+
+.copyright p {
     font-size: 100%;
 }
+
 /*Bas du footer(Jordan)*/
 /*responsive*/
 
-@media screen and (min-width: 768px) and (max-width:991px) { /*Tablet*/
+@media screen and (min-width: 768px) and (max-width:991px) {
+
+    /*Tablet*/
     /*form*/
     .form_footer {
         display: flex;
@@ -203,76 +232,96 @@ footer form h3 {
         flex-direction: row;
         justify-content: center;
     }
+
     .large_input {
         width: 31%;
         margin: 1vw;
     }
+
     /*form*/
     /*Footer Links Responsive md Start*/
     .col-md-0 {
         display: none;
     }
+
     .col-md-1 {
         width: 8.33%;
         box-sizing: border-box;
     }
+
     .col-md-2 {
         width: 16.66%;
         box-sizing: border-box;
     }
+
     .col-md-3 {
         width: 25%;
         box-sizing: border-box;
     }
+
     .col-md-4 {
         width: 33.33%;
         box-sizing: border-box;
     }
+
     .col-md-5 {
         width: 41.66%;
         box-sizing: border-box;
     }
+
     .col-md-6 {
         width: 50%;
         box-sizing: border-box;
     }
+
     .col-md-7 {
         width: 58.33%;
         box-sizing: border-box;
     }
+
     .col-md-8 {
         width: 66.66%;
         box-sizing: border-box;
     }
+
     .col-md-9 {
         width: 75%;
         box-sizing: border-box;
     }
+
     .col-md-10 {
         width: 83.33%;
         box-sizing: border-box;
     }
+
     .col-md-11 {
         width: 91.66%;
         box-sizing: border-box;
     }
+
     .col-md-12 {
         width: 100%;
         box-sizing: border-box;
     }
+
     #social_medias svg {
         width: 3vw;
     }
+
     .hide-button {
         display: hide;
     }
+
     .footer-line-wrapper {
         display: flex;
     }
+
     /*Footer Links Responsive md End*/
 }
 
-@media screen and (max-width:767px) { /*telephone*/
+@media screen and (max-width:767px) {
+
+    /*telephone*/
     /*Form*/
     .form_footer {
         display: flex;
@@ -280,6 +329,7 @@ footer form h3 {
         flex-direction: column;
         margin-top: 2vh;
     }
+
     .large_input {
         width: 90%;
         margin: auto;
@@ -288,92 +338,115 @@ footer form h3 {
         margin-bottom: 3vh;
         font-size: 5vw;
     }
+
     .footer_Button {
         width: 20%;
         height: 5vh;
         margin: auto;
     }
+
     footer form h3 {
         font-size: 6vw;
     }
+
     /*Form*/
     /*Footer Links*/
     .col-sm-0 {
         display: none;
     }
+
     .col-sm-1 {
         width: 8.33%;
         box-sizing: border-box;
     }
+
     .col-sm-2 {
         width: 16.66%;
         box-sizing: border-box;
     }
+
     .col-sm-3 {
         width: 25%;
         box-sizing: border-box;
     }
+
     .col-sm-4 {
         width: 33.33%;
         box-sizing: border-box;
     }
+
     .col-sm-5 {
         width: 41.66%;
         box-sizing: border-box;
     }
+
     .col-sm-6 {
         width: 50%;
         box-sizing: border-box;
     }
+
     .col-sm-7 {
         width: 58.33%;
         box-sizing: border-box;
     }
+
     .col-sm-8 {
         width: 66.66%;
         box-sizing: border-box;
     }
+
     .col-sm-9 {
         width: 75%;
         box-sizing: border-box;
     }
+
     .col-sm-10 {
         width: 83.33%;
         box-sizing: border-box;
     }
+
     .col-sm-11 {
         width: 91.66%;
         box-sizing: border-box;
     }
+
     .col-sm-12 {
         width: 100%;
         box-sizing: border-box;
     }
+
     .footer_div h6 {
         font-size: 13px;
     }
+
     .footer_link {
         display: flex;
         flex-direction: row;
     }
+
     .footer-line-wrapper {
         display: flex;
         margin-bottom: 2vh;
     }
+
     .footer-line-wrapper:not(.hide-red-border) {
         border-bottom: thin solid rgb(74, 74, 74);
     }
+
     .content-to-show {
         display: none;
     }
+
     .hide-button {
         display: flex;
         justify-content: flex-end;
     }
+
     .hide-button svg {
         color: rgb(74, 74, 74);
         transform: rotate(180deg);
     }
+
     .last-row {
         display: flex;
         align-items: center;
@@ -381,91 +454,99 @@ footer form h3 {
         height: 10vh;
         margin-top: 2vh;
     }
+
     #social_medias svg {
         width: 25px;
         padding-right: 2px;
     }
+
     /*Footer Links*/
     /*Copyright (Jordan)*/
-    .t_links1{
+    .t_links1 {
         display: flex;
         flex-direction: column;
     }
-    .t_links2{
+
+    .t_links2 {
         display: flex;
         flex-direction: column;
     }
-    .t_links{
+
+    .t_links {
         justify-content: space-between;
         width: 100%;
     }
-    .copyright{
+
+    .copyright {
         flex-direction: column;
         text-align: center;
     }
+
     /*Copyright (Jordan)*/
 }
-@media screen and (min-width:991px) { /*bureau*/
-    
+
+@media screen and (min-width:991px) {
+    /*bureau*/
+
     .col-lg-0 {
         display: none;
     }
-    
+
     .col-lg-1 {
         width: 8.33%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-2 {
         width: 16.66%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-3 {
         width: 25%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-4 {
         width: 33.33%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-5 {
         width: 41.66%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-6 {
         width: 50%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-7 {
         width: 58.33%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-8 {
         width: 66.66%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-9 {
         width: 75%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-10 {
         width: 83.33%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-11 {
         width: 91.66%;
         box-sizing: border-box;
     }
-    
+
     .col-lg-12 {
         width: 100%;
         box-sizing: border-box;
