@@ -1,4 +1,4 @@
-#Readme
+
 <h1>Project-1-team-JAVT</h1>
 
 <h2>En quoi consiste ce projet ?</h2>
@@ -17,3 +17,4 @@ Les consignes complètes sont disponibles sur le Drive commun : https://drive.go
 - Les commits devront être faits sur les fichiers de la branche dev uniquement
 <h2>Liens utiles</h2>
 - Cours : https://drive.google.com/open?id=17-fyw6yyMS-QcHfuH_VKsa2swV50LVb6
+
