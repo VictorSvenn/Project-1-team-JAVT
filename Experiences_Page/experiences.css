@@ -3,14 +3,8 @@
     list-style: none;
 }
 
-/*html {
-    height: 100%;
-    width: 100%;
-}*/
-
 body { 
     font-family: "Lomino", "LominoSubset", 'open-sans', sans-serif;
-    /*A: Supprimé margin et padding car déjà dans reset.css*/  
 }
 
 .container {
@@ -52,6 +46,67 @@ h2 { font-weight: bold; font-size: 48px; color: rgb(74, 74, 74); }
 h6 { font-weight: bold; font-size: 14px; }
 /* SHARED CSS END*/
 
+
+/* HEADER START */
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: darkslategray;
+    height: 65px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.nav_logo {
+    margin: 0 0 0 30px;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+.myButton {
+    background-color: #ffffff;
+    border: #ffffff solid 1px;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+.myButton:hover {
+    color: rgb(42, 42, 42);
+    background-color: rgb(255, 255, 255);
+    border: black solid 1px;
+}
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+.nav_links {
+    margin: 2px;
+    padding: 0 5px;
+}
+.nav_links a {
+    margin: 0 15px;
+}
+.nav_help {
+    height: 65px;
+}
+
+/*
+.changeColor {
+    background: white;
+ }
+ */
+
+/*HEADER END*/
+
+
 /*BANNER START*/
 .banner {
     display: flex;
@@ -68,7 +123,7 @@ h6 { font-weight: bold; font-size: 14px; }
 }
 
 @media screen and (min-width: 1400px) {
-    .stack-top {
+    .stack-top { 
         top: 45vh;
     }    
 }
@@ -135,6 +190,7 @@ button {
 
 .learn-more {
     display: flex;
+    justify-content: flex-start;
 }
 
 .learn-more-object {
@@ -143,83 +199,29 @@ button {
     flex-direction: row;
     justify-content: flex-start;
 }
-
 /*ARTICLES END*/
 
 
-/* HEADER START */
-nav {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    height: 65px;
-    align-items: center;
-    flex-wrap: nowrap;    
+/*FOOTER FORM START*/
+
+.clear-background {
+    background-color: rgb(248, 248, 248);
 }
-
-.nav_logo {
-    margin: 0 0 0 30px;
-}
-
-header nav a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
-}
-
-.myButton {
-    background-color: #ffffff;
-    border: #ffffff solid 1px;
-    border-radius: 28px;
-    display: inline-block;
-    cursor: pointer;
-    color: #000000;
-    font-size: 15px;
-    padding: 8px 15px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px midnightblue;
-}
-
-.myButton:hover {
-    color: rgb(42, 42, 42);
-    background-color: rgb(255, 255, 255);
-    border: black solid 1px;
-}
-
-.myButton:active {
-    position: relative;
-    top: 1px;
-}
-
-.nav_links {
-    margin: 2px;
-    padding: 0 5px;
-}
-
-.nav_links a {
-    margin: 0 15px;
-}
-
-.nav_help {
-    height: 65px;
-}
-/*HEADER END*/
-
-
-/* FOOTER FORM START */
 
 footer form {
-    background-color: grey;
+    margin-top: 12vh;
+    margin-bottom: 6vh;
+    background-color: rgb(248, 248, 248);
+    
 }
 
 footer p {
     margin: 1vw;
 }
 
-footer form h3 {
+footer form h2 {
     margin: 0 1vw 1vw 1vw;
-    font-size: 3vw;
+    font-size: 20px;
 }
 
 .form_footer {
@@ -233,21 +235,21 @@ footer form h3 {
     height: 3vw;
     border: 0;
     border-bottom: 2px solid black;
-    background-color: grey;
+    background-color: rgb(248, 248, 248);
 }
 
 input::placeholder {
-    color: lightgrey;
+    color: rgb(74, 74, 74);
 }
 
 .footer_Button {
-    background-color: red;
+    background-color: darkslategray;
     border-radius: 42px;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Arial;
-    font-size: 2vw;
+    font-size: 1vw;
     padding: 1.5vw;
     text-decoration: none;
 }
@@ -261,7 +263,7 @@ input::placeholder {
     padding-top: 1vw;
     padding-bottom: 2vw;
 }
-*/
+
 /* FOOTER FORM END*/
 
 /*FOOTER LINKS START */
@@ -340,63 +342,71 @@ input::placeholder {
 
 
 /* FOOTER BOTTOM START */
-#test {
+.t_links{
     display: flex;
-    justify-content: center;
+    margin: auto;
+    justify-content: space-evenly;
 }
-
-section {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    width: 40%;
-    margin: 20px;
-}
-
-section a {
+.t_links1 a{
     text-decoration: none;
-    color: rgb(74, 74, 74);
+    color: black;
+    margin-left: 2vw;
 }
-
-#commun {
-    background:rgb(230, 230, 230);
+.t_links2 a{
+    text-decoration: none;
+    color: black;
+    margin-left: 2vw;
+}
+.commun {
+    background-color: #F3F4F4;
     line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-hr {
-    width: 100%;
-    margin: 2em auto;
-    opacity: 0.44;
-}
-
-#test2 {
+.copyright {
     display: flex;
     color: rgb(74, 74, 74);
     justify-content: space-between;
     width: 100%;
 }
+.copyright p{
+    font-size: 100%;
+}
 /* FOOTER BOTTOM END */
 
 @media screen and (min-width: 768px) and (max-width:991px) {
 /*BANNER md START*/
-    /*.stack-top: {
-       
+    .stack-top {
+        top: 14vh;
     }
-    .trailer-button {
-        border-radius: 30%;
-    }*/
+
+    .arrow-button {
+        margin-top: 1px;
+    }
+
+    .title-section {
+        justify-content: flex-start;
+        font-size: 44px;
+    }
 /*BANNER md END*/
 
 
-/*ARTICLES START*/
-.abstract {
-    font-size: 12px;
-}
+/*ARTICLES md START*/
+    .abstract {
+        font-size: 12px;
+    }
+
+    .title-article {
+        margin-bottom: 1vh;
+    }
+
+
+
 /*ARTICLES END*/
 
 
-/*FOOTER FORM md START*/    
+/*HEADER md START*/    
     .nav_links {
         display: none;
     }
@@ -404,7 +414,10 @@ hr {
     .myButton {
         margin-right: 0vw;
     }
+/*HEADER md START*/
 
+
+/*FOOTER FORM md START*/
     .form_footer {
         display: flex;
         flex-wrap: wrap;
@@ -415,6 +428,10 @@ hr {
     .large_input {
         width: 31%;
         margin: 1vw;
+    }
+
+    .footer_Button {
+        font-size: 2vw;
     }
 /*FOOTER FORM md END*/
   
@@ -449,8 +466,35 @@ hr {
 }
 
 @media screen and (max-width: 767px) {
-    
-    
+/*HEADER sm START*/  
+.nav_links {
+    display: none;
+}
+
+.myButton {
+    margin-right: 0vw;
+}
+/*HEADER sm START*/
+
+/*BANNER sm START*/
+.stack-top {
+    top: 25vh;
+}
+
+.stack-bottom {
+    height: 40vh; 
+}
+
+.title-section {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: flex-start;
+    margin-top: 15vh;
+    margin-bottom: 8vh;
+}
+/*BANNER sm END*/
+
 /*FOOTER FORM sm START*/
     .form_footer {
         display: flex;
@@ -474,13 +518,6 @@ hr {
     }
     footer form h3 {
         font-size: 6vw;
-    }
-    
-    .nav_links {
-        display: none;
-    }
-    .myButton {
-        margin-right: 0vw;
     }
 /*FOOTER FORM sm END*/ 
 
@@ -545,4 +582,29 @@ hr {
         padding-right: 2px;
     }
  /*FOOTER LINKS sm END*/
+
+
+ /*FOOTER BOTTOM sm START*/
+     
+.t_links1{
+        display: flex;
+        flex-direction: column;
+    }
+    .t_links2{
+        display: flex;
+        flex-direction: column;
+    }
+    .t_links{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .copyright{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .commun {
+        font-size: 14px;
+    }
+ /*FOOTER BOTTOM sm END*/
 }
